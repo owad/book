@@ -254,7 +254,7 @@ class Product:
         self.version_number = version_number
         self.events = []  # type: List[events.Event]  #<1>
 
-    def allocate(self, line: OrderLine) -> str:
+    def allocate(self, line: OrderLine) -> Optional[str]:
         try:
             #...
         except StopIteration:
